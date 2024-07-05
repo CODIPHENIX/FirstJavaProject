@@ -4,12 +4,19 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
 
-        int x = random.nextInt(10)+1;
-        boolean b= random.nextBoolean();
-        System.out.println(x);
-        System.out.println("Does he love me "+b);
+        System.out.println("what is your age");
+        int age = scanner.nextInt();
 
+        if(age>=75){
+            System.out.println("you are a boommer");
+        }else if(age>=18){
+            System.out.println("you are an adult");
+        } else if (age>=13) {
+            System.out.println("your are a teeneger");
+        } else {
+            System.out.println("You a still a child");
+        }
     }
 }
